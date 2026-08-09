@@ -23,4 +23,5 @@ steps:
     containerRegistry: 'Docker Connection'
     repository: 'ambarajv/GroupProject'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: '$(Build.SourcesDirectory)/GroupProject/Dockerfile'
+    buildContext: '$(Build.SourcesDirectory)/GroupProject'
